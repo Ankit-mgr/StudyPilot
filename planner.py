@@ -108,24 +108,24 @@ Rules:
 5. Return ONLY valid JSON — no explanation, no markdown.
 
 Return this exact format:
-{
+{{
     "timetable": [
-        {
+        {{
             "day": 1,
             "date": "YYYY-MM-DD",
             "slots": [
-                {
+                {{
                     "subject": "string",
                     "duration_minutes": number,
                     "chapters_to_cover": ["string"],
                     "notes": "string"
-                }
+                }}
             ],
             "total_study_minutes": number
-        }
+        }}
     ],
     "weekly_summary": "string"
-}
+}}
 """
 
     response = client.chat.completions.create(
