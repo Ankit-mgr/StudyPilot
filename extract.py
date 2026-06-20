@@ -58,7 +58,7 @@ Syllabus text:
         messages=[
             {"role": "user", "content": prompt}
         ],
-        temperature=0.1
+        temperature=0.1,
         max_tokens=4000
     )
 
