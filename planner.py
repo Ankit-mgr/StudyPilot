@@ -118,6 +118,7 @@ def generate_weekly_plan(allocated_subjects, daily_hours=4, days_ahead=7):
         model="llama-3.1-8b-instant",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2
+        max_tokens=4000
     )
 
     return response.choices[0].message.content
